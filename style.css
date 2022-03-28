@@ -53,7 +53,7 @@ h2{
     color: White;
 }
 
-a{
+li a{
     font-weight: bold;
     color: White;
     text-decoration: none;
@@ -97,7 +97,9 @@ a{
 }
 
 .header-profile-name{
+    text-decoration: none;
     font-weight: bold;
+    color: black;
 }
 
 .main-img-username{
