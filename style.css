@@ -1,0 +1,26 @@
+:root{
+    --color-primary: rgb(71, 157, 231);
+    --color-secondary: rgb(194, 224, 249);
+    --color-accent: rgb(252,252,255);
+    --color-background: rgb(163,163,163);
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0px;
+    display:grid;
+    grid-template-columns: 150px 1fr;
+}
+
+.sidebar{
+    background-color: var(--color-primary);
+    height: 100vh;
+}
+
+.main{
+    background-color: var(--color-secondary);
+}
+
+button{
+    background-color: var(--color-primary);
+    color: white;
+}
