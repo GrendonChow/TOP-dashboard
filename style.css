@@ -33,6 +33,32 @@ body{
     padding-left: 50px;
 }
 
+ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+li {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+li img{
+    padding-right: 10px;
+}
+
+h2{
+    font-weight: bold;
+    color: var(--color-accent);
+}
+
+a{
+    font-weight: bold;
+    color: White;
+    text-decoration: none;
+}
+
 .main-header{
     display: grid;
     background-color: var(--color-secondary);
@@ -62,6 +88,10 @@ body{
     width: 400px;
 }
 
+.search:focus{
+    outline: 1px solid var(--color-accent)
+}
+
 .header-profile-image{
     height: 40px;
 }
@@ -81,35 +111,14 @@ button{
     color: white;
     border-style: none;
     border-radius: 30px;
-    padding: 15px 40px
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+button:hover{
+    outline: 2px solid var(--color-accent)
 }
 
 .main-body{
     background-color: var(--color-background);
-}
-
-ul{
-    list-style: none;
-    padding-left: 20px;
-}
-
-li {
-    display: flex;
-    padding: 5px;
-    align-items: center;
-}
-
-li img{
-    padding-right: 10px;
-}
-
-h2{
-    font-weight: bold;
-    color: White;
-}
-
-a{
-    font-weight: bold;
-    color: White;
-    text-decoration: none;
 }
