@@ -36,9 +36,38 @@ body{
 .main-header{
     display: grid;
     background-color: var(--color-secondary);
+    padding-right: 50px;
 }
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search{
+    border-radius: 25px;
+    border-style: none;
+    width: 400px;
+}
+
 .header-profile-image{
     height: 40px;
+}
+
+.header-profile-name{
+    font-weight: bold;
 }
 
 .main-img-username{
