@@ -29,6 +29,22 @@ body{
     margin-bottom: 50px;
 }
 
+.main-body, .main-header{
+    padding-left: 50px;
+}
+
+.main-header{
+    display: grid;
+    background-color: var(--color-secondary);
+}
+.header-profile-image{
+    height: 40px;
+}
+
+.main-img-username{
+    height: 75px;
+}
+
 button{
     font-weight: bold;
     font-size: 15px;
@@ -37,14 +53,6 @@ button{
     border-style: none;
     border-radius: 30px;
     padding: 15px 40px
-}
-
-.main-body, .main-header{
-    padding-left: 50px;
-}
-
-.main-header{
-    background-color: var(--color-secondary);
 }
 
 .main-body{
