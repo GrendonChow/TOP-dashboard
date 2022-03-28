@@ -1,8 +1,8 @@
 :root{
     --color-primary: rgb(34, 141, 235);
     --color-secondary: rgb(194, 224, 249);
-    --color-accent: rgb(252,252,255);
-    --color-background: rgb(163,163,163);
+    --color-accent: rgb(255,179,71);
+    --color-background: rgb(185, 185, 185);
 }
 body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -29,13 +29,26 @@ body{
     margin-bottom: 50px;
 }
 
-.main{
+button{
+    font-weight: bold;
+    font-size: 15px;
+    background-color: var(--color-primary);
+    color: white;
+    border-style: none;
+    border-radius: 30px;
+    padding: 15px 40px
+}
+
+.main-body, .main-header{
+    padding-left: 50px;
+}
+
+.main-header{
     background-color: var(--color-secondary);
 }
 
-button{
-    background-color: var(--color-primary);
-    color: white;
+.main-body{
+    background-color: var(--color-background);
 }
 
 ul{
@@ -44,11 +57,9 @@ ul{
 }
 
 li {
-    display: inline-block;
+    display: flex;
     padding: 5px;
-    list-style-type: none;
-    vertical-align: middle;
-    padding-right: 20px;
+    align-items: center;
 }
 
 li img{
