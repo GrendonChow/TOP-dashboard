@@ -169,6 +169,7 @@ button:active{
     grid-template-columns: 3fr 1fr;
     gap: 15px;
     padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 h3{
@@ -203,6 +204,7 @@ h3{
 }
 
 .announcements, .trending{
+    border-left: 7px solid var(--color-accent);
     display:flex;
     flex-direction: column;
     padding: 20px;
@@ -210,13 +212,25 @@ h3{
 
 .card{
     border-left: 7px solid var(--color-accent);
+    display:grid;
+    grid-template-rows: 1fr auto;
+    padding: 20px;
+}
+
+.card-icons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.card-icons img{
+    height: 2rem;
 }
 
 .card:hover{
     transition: 0.5s;
     transform: scale(1.03);
 }
-
 .annoucement-content{
     display: block;
     padding: 5px;
@@ -224,7 +238,6 @@ h3{
 
 .announcement-border{
     border-top: 2px solid  var(--color-shadow)
-    
 }
 
 .annoucement-content p, .annoucement-content h5{
@@ -248,12 +261,4 @@ h3{
 
 .trend-tag{
     font-weight: bold;
-}
-
-.announcements{
-    border: 1px solid red;
-}
-
-.trending{
-    border: 1px solid red;   
 }
