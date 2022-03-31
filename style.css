@@ -206,7 +206,6 @@ h3{
 
 .card{
     border-left: 7px solid var(--color-accent);
-
 }
 
 .annoucement-content{
@@ -224,7 +223,22 @@ h3{
 }
 
 .trending-content{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.trending-content img{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
 
+.trending-content p{
+    font-size: 14px;
+}
+
+.trend-tag{
+    font-weight: bold;
 }
 
 .announcements{
