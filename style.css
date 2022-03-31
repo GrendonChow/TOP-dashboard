@@ -73,8 +73,10 @@ li a{
     background-color: var(--color-secondary);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
     border-bottom: 3px solid var(--color-shadow);
+
 }
 
 .search-container{
@@ -139,17 +141,17 @@ li a{
     display: flex;
     justify-content: end;
     gap: 10px;
-    align-items: center;
+    align-items:flex-end;
 }
 
 button{
     font-weight: bold;
-    font-size: 15px;
+    font-size: 13px;
     background-color: var(--color-primary);
     color: white;
     border-style: none;
     border-radius: 30px;
-    padding: 15px 40px;
+    padding: 10px 35px;
     cursor: pointer;
 }
 
@@ -161,23 +163,30 @@ button:hover{
     background-color: var(--color-background);
     display:grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(4 auto);
     gap: 15px;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
-.content h3{
-    align-self: flex-end;
+h3{
     margin: 0;
 }
-
 .projects{
     display:grid;
-    grid-template-columns: 1fr 1fr;;
-    grid-template-rows: repeat(auto-fit,);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    grid-auto-rows: 1fr;
     border: 1px solid red;
-    grid-row: 2 / 5;
     gap: 10px;
+}
+
+.projects-header{
+    grid-column: 1 / -1;
+}
+
+.annoucement-trending{
+    display:grid;
+    grid-template-rows: min-content 1fr min-content 1fr;
+    gap:10px;
 }
 
 .card, .annoucement-card, .trending-card{
@@ -187,9 +196,7 @@ button:hover{
 }
 
 .card{
-    height: 150px;
-    width: 275px;
-    border-left: 4px solid var(--color-accent);
+    border-left: 7px solid var(--color-accent);
     border-radius: 10px;
     box-shadow: 3px 3px var(--color-shadow);
 }
@@ -205,17 +212,12 @@ button:hover{
 }
 
 .announcements{
-    grid-row: 2/ 3;
     border: 1px solid red;
 }
 .trending-header{
-    grid-row: 3 / 4;
     border: 1px solid red;
 }
 
 .trending{
-    grid-row: 4/5;
-    grid-column: 2 / 3;
-    border: 1px solid red;
-    
+    border: 1px solid red;   
 }
