@@ -159,6 +159,10 @@ button:hover{
     outline: 2px solid var(--color-accent)
 }
 
+button:active{
+    transform: scale(0.95);
+}
+
 .content{
     background-color: var(--color-background);
     display:grid;
@@ -206,6 +210,11 @@ h3{
 
 .card{
     border-left: 7px solid var(--color-accent);
+}
+
+.card:hover{
+    transition: 0.5s;
+    transform: scale(1.03);
 }
 
 .annoucement-content{
