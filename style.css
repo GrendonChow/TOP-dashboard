@@ -175,46 +175,59 @@ h3{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto;
     grid-auto-rows: 1fr;
-    border: 1px solid red;
-    gap: 10px;
+    gap: 15px;
 }
 
 .projects-header{
     grid-column: 1 / -1;
+    margin-left: 10px;
 }
 
 .annoucement-trending{
     display:grid;
-    grid-template-rows: min-content 1fr min-content 1fr;
-    gap:10px;
+    grid-template-rows: repeat(4, min-content);
+    gap:15px;
 }
 
-.card, .annoucement-card, .trending-card{
+.announcements p {
+    font-size: 12px;
+}
+.card, .announcements, .trending{
     background-color: white;
     border-radius: 10px;
     box-shadow: 3px 3px var(--color-shadow);
 }
 
+.announcements, .trending{
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
 .card{
     border-left: 7px solid var(--color-accent);
-    border-radius: 10px;
-    box-shadow: 3px 3px var(--color-shadow);
+
 }
 
-.annoucement-card{
-    width: 250px;
-    height: 150px;
+.annoucement-content{
+    display: block;
+    padding: 5px;
 }
 
-.trending-card{
-    width: 250px;
-    height: 150px;
+.announcement-border{
+    border-top: 2px solid  var(--color-shadow)
+    
+}
+
+.annoucement-content p, .annoucement-content h5{
+    margin: 0;
+}
+
+.trending-content{
+
 }
 
 .announcements{
-    border: 1px solid red;
-}
-.trending-header{
     border: 1px solid red;
 }
 
